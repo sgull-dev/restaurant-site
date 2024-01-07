@@ -10,6 +10,10 @@ html, body {
     margin: 0;
     left: 0;
     top:0;
+
+    height: 120vh;
+    object-fit: cover;
+    object-position: center center;
 }
 
 header {
