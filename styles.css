@@ -1,15 +1,20 @@
 :root {
     --orange-color: rgb(223, 191, 149);
     --welcome-color: #faedc9;
-    --main-accent-color: #92431c;
+    --main-accent-color: #977845;
     --subdued-accent: #c09d8c;
-    --dark-accent: #290e0e;
+    --dark-accent: #764e2c; /*#290e0e;*/
+
+    --org-l: #fc9d4d;
+    --org-m: #e7812b;
+    --org-d: #764e2c;
 }
 
 html, body {
     margin: 0;
     width: 100%;
     height: 100%;
+    background-color: var(--dark-accent);
 }
 
 .image-landing {
@@ -63,16 +68,24 @@ header h1 {
 .section-about {
     background-color: var(--dark-accent);
     min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-about p {
+    font-family: 'Lato', sans-serif;
+    color: var(--org-l);
 }
 
 .section-food {
-    background-color: var(--main-accent-color);
-    min-height: 100vh;
+    background-color: var(--org-m);
+    min-height: 73vh;
 }
 
 .section-location {
     background-color: var(--dark-accent);
-    min-height: 50vh;
+    min-height: 61vh;
 }
 
 @media screen and (max-width: 1500px) {
