@@ -3,11 +3,11 @@
     --welcome-color: #faedc9;
     --main-accent-color: #977845;
     --subdued-accent: #c09d8c;
-    --dark-accent: #764e2c; /*#290e0e;*/
+    --dark-accent: #261301; /*#290e0e;*/
 
-    --org-l: #fc9d4d;
-    --org-m: #e7812b;
-    --org-d: #764e2c;
+    --org-l: #ffaa30;
+    --org-m: #c2701c;
+    --org-d: #7c450e;
 }
 
 html, body {
@@ -71,15 +71,21 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    align-content: center;
 }
 
 .section-about p {
     font-family: 'Lato', sans-serif;
-    color: var(--org-l);
+    color: var(--org-m);
+    width: 70%;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
 }
 
 .section-food {
-    background-color: var(--org-m);
+    background-color: var(--org-d);
     min-height: 73vh;
 }
 
@@ -88,7 +94,7 @@ header h1 {
     min-height: 61vh;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1450px) {
     .welcome {
         top: 20%;
     }
@@ -113,4 +119,5 @@ main {
 
 .bread {
     font-family: 'Lato', sans-serif;
+    color: var(--org-d);
 }
