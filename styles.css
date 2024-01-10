@@ -84,14 +84,32 @@ header h1 {
     margin: 0;
 }
 
-.section-food {
-    background-color: var(--org-d);
-    min-height: 73vh;
-}
+
 
 .section-location {
     background-color: var(--dark-accent);
     min-height: 61vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section-location img {
+    height: auto;
+    width: 600px;
+    max-width: 90%;
+    background-color: #999;
+    margin-top: 2vh;
+}
+
+.section-location p {
+    font-family: 'Lato', sans-serif;
+    color: var(--org-m);
+    font-size: 18px;
+    margin: 0 1vw;
+    white-space: pre;
+    text-align: center;
 }
 
 @media screen and (max-width: 1450px) {
@@ -103,6 +121,9 @@ header h1 {
 @media screen and (max-width: 768px) {
     .welcome {
         font-size: 34px;
+    }
+    .section-location p {
+        font-size: 17px;
     }
 }
 
@@ -120,4 +141,32 @@ main {
 .bread {
     font-family: 'Lato', sans-serif;
     color: var(--org-d);
+}
+
+.section-food {
+    background-color: var(--org-d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    padding-bottom: 3vh;
+}
+
+.food-cont {
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 2vw;
+}
+
+.food-cont img {
+    width: 400px;
+    height: auto;
+}
+
+.food-cont h3 {
+    font-family: 'Lato', sans-serif;
+    color: var(--dark-accent);
+    text-align: center;
+    font-size: 22px;
 }
