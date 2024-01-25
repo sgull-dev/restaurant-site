@@ -1,2 +1,3 @@
 # restaurant-site
-Restaurant website
+Chinese food restaurant website.
+![Landing](/img/pandas_landing.PNG)
